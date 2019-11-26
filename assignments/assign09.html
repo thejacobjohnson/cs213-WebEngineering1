@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang=en-us>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jacob Johnson">
+    <meta name="description" content="information about the largest cities in some countries and student json data">
+    <title> Top Ten Cities and Student JSON</title>
+    <link rel="stylesheet" type="text/css" href="assign09.css">
+</head>
+<body>
+<header>
+    <div class="navbar">
+        <a href="assign09.html">Home</a>
+    </div>
+    <div class="header-background">
+        <div class="page-header">
+            <div class="center-flex" id="headerText">
+                <h1> Cities and JSON </h1>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="part1">
+    <div class=flexitem id="countrySelector">
+        <label>Select Country: </label><br><br>
+        <input class="rbutton" type="radio" name="country" id="country_usa" value="USA" onclick="part1()"> USA<br>
+        <input class="rbutton" type="radio" name="country" id="country_mexico" value="Mexico" onclick="part1()"> Mexico<br>
+        <input class="rbutton" type="radio" name="country" id="country_canada" value="Canada" onclick="part1()"> Canada<br>
+        <input class="rbutton" type="radio" name="country" id="country_russia" value="Russia" onclick="part1()"> Russia<br>
+    </div>
+    <div class=flexitem>
+        <h3 id="cityHeader"></h3>
+        <textarea id="cityOutput" name="cityOutput" readonly></textarea>
+    </div>
+    <div class=flexitem>
+        <img class = responsive-image src="../images/worldmap.png" alt="Map of the world">
+    </div>
+</div>
+<div class="part2">
+    <div class=flexitem2 id="jsonSelector">
+        <label for="jsonFileName" >Input JSON Filename</label>
+        <input type="text" name="jsonFileName" id="jsonFileName" value="json.txt">
+        <button type="button" name="fileOpener" onclick="getJSON()">Get File</button>
+    </div>
+    <div class=flexitem2>
+        <h3 id="jsonHeader"></h3>
+    </div>
+    <div class=flexitem2 id="jsonOutput">
+    </div>
+</div>
+<footer>
+    <div class="footer">
+        <div id="copyright">
+            <p>© 2019<p>
+        </div>
+        <div id="footer-address">
+            <p>Top Ten City Informer</p>
+        </div>
+    </div>
+</footer>
+<script src="assign09.js">
+</script>
+</body>
+</html>

@@ -1,0 +1,277 @@
+body {
+    margin: 0;
+}
+
+a {
+    color: white;
+}
+
+.top-header {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: rgb(0,20, 60);
+    height: 100px;
+    align-items: center;
+}
+
+.header-grid-item {
+    text-align: center;
+    color: white;
+}
+
+.search-bar {
+    color: white;
+    padding: 1px;
+    margin: 0;
+    text-align: right;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: dodgerblue;
+}
+
+.navbar a {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 1.5em;
+}
+
+.header-background {
+    background-image: url("../images/baim-hanif-pYWuOMhtc6k-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: rgb(0, 20, 60);
+}
+
+.page-header {
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    align-content: center;
+    justify-content: space-around;
+    height: 600px;
+    background-color: rgba(0,20, 60, .7);
+}
+
+.page-header h1{
+    font-size: 4em;
+}
+
+.page-header h3{
+    font-size: 2.5em;
+}
+
+#headerText {
+    color: #DDDDDD;
+}
+
+.center-flex {
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-content {
+    flex: 80%;
+    padding: 1%;
+    color: #DDDDDD;
+    background-color: rgb(0,20, 60);
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid-item {
+    text-align: center;
+    padding: 20px;
+}
+
+.main-grid-top {
+    font-size: 2em;
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    margin: 5%;
+    color: white;
+    font-family: Serif;
+}
+
+.main-grid-apply {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.main-grid-apply-top {
+    font-size: 2em;
+    grid-column: 1 / span 4;
+    grid-row: 1;
+    margin: 5%;
+    color: white;
+    font-family: Serif;
+}
+
+.apply-text {
+    font-size: 2em;
+    grid-column: span 1;
+    color: white;
+    font-family: SansSerif;
+    text-align: right;
+    padding-right: 5%;
+    height:20px;
+    margin: 5%;
+}
+
+.apply-box {
+    font-size: 1em;
+    grid-column: span 1;
+    background-color: white;
+    text-align: left;
+    height: 40px;
+    margin: 5%;
+}
+
+.apply-box-wide {
+    font-size: 1em;
+    grid-column: span 3;
+    background-color: white;
+    text-align: left;
+    height: 40px;
+    margin: 5%;
+}
+
+.input-box {
+    width:100%;
+    height: 100%;
+}
+
+.main-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2%;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.flex-item {
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    font-family: Serif;
+    padding: 5px;
+    align-content: center;
+    justify-content: center;
+}
+
+.about-image {
+    flex: 20%;
+    align-content: center;
+    justify-content: center;
+}
+
+.about-text {
+    flex:70%;
+    align-content: center;
+    justify-content: center;
+}
+
+.main-flex-blue {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: dodgerblue;
+}
+
+.right-side {
+    flex: 15%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    background-color: dodgerblue;
+}
+
+#calendar {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+#upcoming-events {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+#upcoming-events p{
+    text-align: left;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: lightgrey;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+#copyright{
+    flex:20%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#footer-address{
+    flex: 40%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#logo-photo{
+    flex:5%;
+    max-width: 50px;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+.responsive-image {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+}
+
+.responsive-logo {
+    width: 100%;
+    height: auto;
+    max-width: 100px;
+}
+
+#school-logo {
+    width: auto;
+    height: 100%;
+    max-height: 100px;
+}

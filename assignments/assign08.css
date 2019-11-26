@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+}
+
+a {
+    color: purple;
+}
+
+textarea {
+    rows: 4;
+    cols: 30;
+    font-size: large;
+}
+
+td {
+    border: 1px solid black;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: rgb(170, 130, 215)
+}
+
+.navbar a {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 1.5em;
+}
+
+.header-background {
+    background-image: url("../images/brown-wooden-framed-gold-open-printed-decorative-signage-1115600.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: rgb(0, 20, 60);
+}
+
+.page-header {
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    align-content: center;
+    justify-content: space-around;
+    height: 400px;
+    background-color: rgba(220, 190, 255, .7);
+}
+
+.page-header h1{
+    font-size: 4em;
+}
+
+.page-header h3{
+    font-size: 2.5em;
+}
+
+#headerText {
+    color: rebeccapurple;
+    font-family: sans-serif;
+}
+
+.center-flex {
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-content {
+    color: #111111;
+    background-color: rgb(240, 240, 240);
+    padding: 2% 10%;
+}
+
+#tableTitle {
+    text-align: center;
+}
+
+input {
+    width: 175px;
+    height: 30px;
+    font-size: large;
+    margin: 1% 0 4% 0;
+}
+
+button {
+    width: 150px;
+    height: 30px;
+    font-size: 1.3rem;
+    margin: 1% 0 4% 0;
+    border-radius: 5px;
+}
+
+#clear {
+    width: 150px;
+    height: 30px;
+    font-size: 1.3rem;
+    margin: 1% 0 4% 0;
+    border-radius: 5px;
+}
+
+.item1 { grid-area: firstname; }
+.item2 { grid-area: lastname; }
+.item3 { grid-area: address; }
+.item4 { grid-area: phone; }
+.item5 { grid-area: items; }
+.item6 { grid-area: cardtype; }
+.item7 { grid-area: cardnum; }
+.item8 { grid-area: exp; }
+.item9 { grid-area: reset; }
+.item10 { grid-area: submit; }
+.item11 { grid-area: total; padding-left: 50px;}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'firstname lastname phone'
+    'address items items'
+    'address items items'
+    'cardtype total total'
+    'cardtype cardnum exp'
+    'submit reset auto';
+    grid-gap: 50px;
+    justify-content: center;
+    align-content: center;
+}
+
+textarea {
+    height:200px;
+    width: 300px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: lightgrey;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+#copyright{
+    flex:20%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#footer-address{
+    flex: 40%;
+    padding-left: 5%;
+    padding-right: 5%;
+}

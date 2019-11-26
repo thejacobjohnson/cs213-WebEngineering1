@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+}
+
+a {
+  color: teal;
+}
+
+.header-background {
+  background-image: url("../images/backyard.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.page-header {
+  display: flex;
+  background-color: rgba(0, 128, 128, 0.7);
+  padding: 20px;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  height: 300px;
+}
+
+#headerText {
+  color: #DDDDDD;
+}
+
+.center-flex {
+  display: flex;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #444444;
+}
+
+.navbar a{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left-side {
+  flex: 27%;
+  padding: 1%;
+  background-color: #666666;
+  display: flex;
+  flex-direction: column;
+  color: #004040;
+}
+
+#family-photo {
+  text-align: center;
+}
+
+#calendar {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+#blogs {
+  display: flex;
+  flex-direction: column;
+}
+
+#blogs a {
+  text-align: center;
+  padding: 10px;
+  color: #004040;
+}
+
+.main-content {
+  flex: 67%;
+  padding: 1%;
+  background-color: #008080;
+  color: #DDDDDD;
+}
+
+.blog-post{
+    display: flex;
+    padding: 1%;
+    flex-wrap: wrap;
+}
+
+.post-image {
+  padding: 1%;
+  flex: auto;
+  max-width: 150px;
+}
+
+.post-content {
+  line-height: 1.5;
+  padding: 1%;
+  flex: 60%;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: lightgrey;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+
+#copyright{
+  flex:20%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#footer-address{
+  flex: 40%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#logo-photo{
+  flex:5%;
+  max-width: 50px;
+  padding-right: 2%;
+  padding-left: 2%;
+}
+
+.responsive-image {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+}

@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+}
+
+a {
+    color: #121212;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: rgb(170, 130, 20);
+}
+
+.navbar a {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 1.5em;
+}
+
+.header-background {
+    background-image: url("../images/thomas-kelley-hHL08lF7Ikc-unsplash.jpg") ;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.page-header {
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    align-content: center;
+    justify-content: space-around;
+    height: 200px;
+    background-color: rgba(220, 100, 50, .7);
+}
+
+#headerText {
+    color: black;
+    font-family: sans-serif;
+    margin: 50px;
+}
+
+textarea {
+    width: 5px;
+    height: 5px;
+    resize: none;
+    border: none;
+}
+
+.part1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.flexitem {
+    margin: 20px;
+    flex: 30%;
+    height: auto;
+    width: 100%;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+
+.part2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.flexitem2 {
+    margin: 20px;
+    flex: 100%;
+    height: auto;
+    width: 100%;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+
+#jsonOutput {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.jsonStudents {
+    margin: 20px;
+    flex: 30%;
+    height: auto;
+    width: 100%;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: lightgrey;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+.responsive-image {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+}
+
+#copyright{
+    flex:20%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#footer-address{
+    flex: 40%;
+    padding-left: 5%;
+    padding-right: 5%;
+}

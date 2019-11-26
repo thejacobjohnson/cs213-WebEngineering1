@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang=en-us>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jacob Johnson">
+    <meta name="description" content="Mortgage Cost Calculator">
+    <title> University of Bulldogs </title>
+    <link rel="stylesheet" type="text/css" href="assign07.css">
+</head>
+<body>
+<header>
+    <div class="navbar">
+        <a href="assign07.html">Home</a>
+    </div>
+</header>
+<div class="header-background">
+    <div class="page-header">
+        <div class="center-flex" id="headerText">
+            <h1> Mortgage Calculator </h1>
+            <h3> Can you afford it? </h3>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="main-content">
+        <form>
+            <div>
+                Loan Amount: <br>
+                $ <input type="number" id="amount" placeholder="e.g. 200000" onchange="vAmount()">
+            </div>
+            <div>
+                Annual Percentage Rate (between 0.00% and 25.00%) <br>
+                <input type="text" id="apr" placeholder="e.g. 4.5" onchange="vAPR()"> %
+            </div>
+            <div>
+                Down Payment: <br>
+                $ <input type="text" id="down" placeholder="e.g. 10000" onchange="vDown()">
+            </div>
+            <div>
+                Loan Term (between 1 and 40 years): <br>
+                <input type="text" id="term" placeholder="e.g. 30" onchange="vTerm()"> years
+            </div>
+            <div>
+                Monthly Payment: <br>
+                <input id="payment" readonly>
+            </div>
+            <div>
+                <button type="button" id="calculate" onclick="calcPayment()">Calculate</button>
+            </div>
+            <div>
+                <input type="reset" id="clear" onclick="clearPayment()">
+            </div>
+        </form>
+    </div>
+</div>
+<footer>
+    <div class="footer">
+        <div id="copyright">
+            <p>© 2019<p>
+        </div>
+        <div id="footer-address">
+            <p>Get A Mortgage, Idaho Falls, ID 83401</p>
+        </div>
+    </div>
+</footer>
+<script>
+    invalid = "rgba(200, 20, 20, .5)"
+    function calcPayment(){
+        let apr, amount, down, term, payment;
+        apr = document.getElementById("apr").value.trim();
+        amount = document.getElementById("amount").value.trim();
+        down = document.getElementById("down").value.trim();
+        term = document.getElementById("term").value.trim();
+        if( down == "" || isNaN(down) || down == null ) {
+            document.getElementById("down").value = 0;
+            down = 0;
+        }
+        if( amount == "" || isNaN(amount) || amount == null ) {
+            document.getElementById("amount").value = null;
+            document.getElementById("amount").placeholder = "Enter a Number";
+            document.getElementById("amount").style.background = invalid;
+            document.getElementById("amount").focus();
+        } else if( apr == "" || isNaN(apr) || apr == null ) {
+            document.getElementById("apr").value = null;
+            document.getElementById("apr").placeholder = "Enter a number";
+            document.getElementById("apr").style.background = invalid;
+            document.getElementById("apr").focus();
+        } else if( term == "" || isNaN(term) || term == null ) {
+            document.getElementById("term").value = null;
+            document.getElementById("term").placeholder = "Enter a number";
+            document.getElementById("term").style.background = invalid;
+            document.getElementById("term").focus();
+        }
+        else {
+            let r, n, k, p;
+            r = apr / 12 / 100;
+            n = term * 12;
+            p = amount - down;
+            payment = p * (r * ((1 + r) ** n) / (((1 + r) ** n) - 1));
+            document.getElementById("payment").value = payment.toFixed(2);
+        }
+    }
+
+    function vAPR(){
+        let apr = document.getElementById("apr").value;
+        if (isNaN(apr) || apr < 0.00 || apr > 25.00) {
+            document.getElementById("apr").value = null;
+            document.getElementById("apr").placeholder = "Invalid";
+            document.getElementById("apr").style.background = invalid;
+            document.getElementById("apr").focus();
+        }
+        else {
+            document.getElementById("apr").style.background = "ghostwhite";
+        }
+    }
+
+    function vTerm(){
+        let term = document.getElementById("term").value;
+        if (isNaN(term) || term <= 0 || term > 40) {
+            document.getElementById("term").value = null;
+            document.getElementById("term").placeholder = "Invalid";
+            document.getElementById("term").style.background = invalid;
+            document.getElementById("term").focus();
+        }
+        else {
+            document.getElementById("term").style.background = "ghostwhite";
+        }
+    }
+
+    function vAmount() {
+        let amount = document.getElementById("amount").value;
+        if (isNaN(amount)) {
+            document.getElementById("amount").value = null;
+            document.getElementById("amount").placeholder = "Invalid";
+            document.getElementById("amount").style.background = invalid;
+            document.getElementById("amount").focus();
+        }
+        else {
+            document.getElementById("amount").style.background = "ghostwhite";
+        }
+    }
+
+
+    function vDown() {
+        let down = document.getElementById("down").value;
+        if (isNaN(down)) {
+            document.getElementById("down").value = null;
+            document.getElementById("down").placeholder = "Invalid";
+            document.getElementById("down").style.background = invalid;
+            document.getElementById("down").focus();
+        }
+        else {
+            document.getElementById("down").style.background = "ghostwhite";
+        }
+    }
+
+    function clearPayment(){
+        document.getElementById("payment").value = null;
+    }
+</script>
+</body>
+</html>
