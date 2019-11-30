@@ -98,7 +98,7 @@ function vForm() {
         document.getElementById("exp_date").style.background = "ghostwhite";
     }
     if(focus[0] != null){document.getElementById(focus[0]).focus();}
-    if(valid == true) {alert("Order Submitted Successfully!");}
+    if(valid == true) {}
     return valid;
 }
 
@@ -110,12 +110,16 @@ function vCheck(el){
 
 function calcTotal() {
     let table = document.getElementById("for_sale");
-    let checkboxes = table.getElementsByTagName("INPUT");
+    let checkboxes = document.getElementsByName("item[]");
     let total = 0;
     let curr = 0;
     for (let i = 0; i < checkboxes.length; i++) {
         if (checkboxes[i].checked) {
-            curr = Number(checkboxes[i].value)
+            let idname = checkboxes[i].value.toLowerCase();
+            idname  = "v" + idname;
+            //console.log("idname = " + idname);
+            curr = document.getElementById(idname).value;
+            //console.log("curr = " + curr);
             total += Number(curr);
         }
     }

@@ -1,9 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0f03d2fe-b622-4ca9-b3a0-23b994b07cd6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/assign11.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/assign11.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/assign11.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/assign11.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/assign11.php" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/assign11.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/assign11_a.php" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/assign11_a.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1U7bfQoYixhBKUbXd3khM50Ss79" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="OPEN_URL_DIALOG">
+      <recent name="http://localhost/~jwjohn19/assignments/assign11_a.php" />
+      <recent name="http://localhost/~jwjohn19/assignments/assign11.php" />
+      <recent name="http://localhost/~jwjohn19/assignments/assign11.html" />
+      <recent name="http://localhost/~jwjohn19/" />
+      <recent name="http://localhost/jwjohn19/" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assignments" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0f03d2fe-b622-4ca9-b3a0-23b994b07cd6" name="Default Changelist" comment="" />
+      <created>1575080136967</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575080136967</updated>
+      <workItem from="1575080140807" duration="155000" />
+      <workItem from="1575083622065" duration="2713000" />
+      <workItem from="1575087281129" duration="9913000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="340" y="0" width="679" height="736" key="#PHP" timestamp="1575089213563">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="340" y="0" width="679" height="736" key="#PHP/0.0.1366.736@0.0.1366.736" timestamp="1575089213563" />
+    <state x="416" y="117" width="528" height="503" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1575084848933">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="416" y="117" width="528" height="503" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.736@0.0.1366.736" timestamp="1575084848933" />
+    <state x="466" y="126" width="428" height="486" key="FileChooserDialogImpl" timestamp="1575087135835">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="466" y="126" width="428" height="486" key="FileChooserDialogImpl/0.0.1366.736@0.0.1366.736" timestamp="1575087135835" />
+    <state x="480" y="294" width="399" height="150" key="NewPhpFileDialog" timestamp="1575084922541">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="480" y="294" width="399" height="150" key="NewPhpFileDialog/0.0.1366.736@0.0.1366.736" timestamp="1575084922541" />
+    <state x="349" y="195" key="com.intellij.ide.util.TipDialog" timestamp="1575083622095">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="349" y="195" key="com.intellij.ide.util.TipDialog/0.0.1366.736@0.0.1366.736" timestamp="1575083622095" />
+    <state x="347" y="161" key="run.anything.popup" timestamp="1575097184622">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="347" y="161" key="run.anything.popup/0.0.1366.736@0.0.1366.736" timestamp="1575097184622" />
+    <state x="346" y="57" key="search.everywhere.popup" timestamp="1575084906477">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="346" y="57" key="search.everywhere.popup/0.0.1366.736@0.0.1366.736" timestamp="1575084906477" />
   </component>
 </project>
