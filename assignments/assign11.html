@@ -1,1 +1,133 @@
-This will be assignment #11
+<!DOCTYPE html>
+<html lang=en-us>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jacob Johnson">
+    <meta name="description" content="Bulldog Store of Items">
+    <title> Bulldog Store </title>
+    <link rel="stylesheet" type="text/css" href="assign08.css">
+</head>
+<body onload="clearForm()">
+<header>
+    <div class="navbar">
+        <a href="assign08.html">Home</a>
+    </div>
+</header>
+<div class="header-background">
+    <div class="page-header">
+        <div class="center-flex" id="headerText">
+            <h1> Bulldog Store </h1>
+            <h3> Happiness, $15.00 </h3>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="main-content">
+        <form id="user_info" onsubmit="return vForm()" onreset="clearForm()">
+            <div class="grid-container">
+                <div class="item1">
+                    <label for="first_name" >First Name: </label>
+                    <input class="required" type="text" id="first_name" name="first_name" placeholder="First Name" oninput="vCheck(this)">
+                </div>
+                <div class="item2">
+                    <label for="last_name" >Last Name: </label>
+                    <input class="required" type="text" id="last_name" name="last_name" placeholder="Last Name" oninput="vCheck(this)">
+                </div>
+                <div class="item4">
+                    <label for="phone" >Phone Number: </label>
+                    <input class="required" type="text" id="phone" name="phone" placeholder="###-###-####" onchange="vPhone()">
+                </div>
+                <div class="item3">
+                    <label for="address" >Address: </label>
+                    <textarea class="required" id="address" name="address" form="user_info" placeholder="street, city, state and zip"  oninput="vCheck(this)"></textarea>
+                </div>
+                <div class="item5">
+                    <h3 id="tableTitle"> Items for Sale </h3>
+                    <table id="for_sale" onchange="calcTotal()">
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="item_0" name="item_0" value="10.00">
+                                <label for="item_0" >Item 0 - $10.00</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="item_1" name="item_1" value="10.00">
+                                <label for="item_1" >Item 1 - $10.00</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="item_2" name="item_2" value="10.00">
+                                <label for="item_2" >Item 2 - $10.00</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="item_3" name="item_3" value="20.00">
+                                <label for="item_3" >Item 3 - $20.00</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="item_4" name="item_4" value="40.00">
+                                <label for="item_4" >Item 4 - $40.00</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="item_5" name="item_5" value="20.00">
+                                <label for="item_5" >Item 5 - $20.00</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="item_6" name="item_6" value="30.00">
+                                <label for="item_6" >Item 6 - $30.00</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="item_7" name="item_7" value="30.00">
+                                <label for="item_7" >Item 7 - $30.00</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="item_8" name="item_8" value="30.00">
+                                <label for="item_8" >Item 8 - $30.00</label>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="item11">
+                    <label for="total" >Total</label>
+                    $<input type="text" name="total" id="total" readonly>
+                </div>
+                <div class="item6">
+                    <label>Credit Card Type: </label><br><br>
+                    <input type="radio" name="card" id="visa" value="visa" checked="checked"> Visa<br>
+                    <input type="radio" name="card" id="mastercard" value="master"> Master Card<br>
+                    <input type="radio" name="card" id="americanExpress" value="americanEx"> American Express
+                </div>
+                <div class="item7">
+                    <label for="credit_card" >Credit Card Number: </label>
+                    <input class="required" type="text" id="credit_card" name="credit_card" placeholder="################" onchange="vCardNumber()">
+                </div>
+                <div class="item8">
+                    <label for="exp_date" >Exp Date: </label>
+                    <input class="required" type="text" id="exp_date" name="exp_date" placeholder="##/####" onchange="vExpDate()">
+                </div>
+                <div class="item10">
+                    <input type="submit" id="validate" name="validate">
+                </div>
+                <div class="item9">
+                    <input type="reset" id="form_reset" name="reset">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<footer>
+    <div class="footer">
+        <div id="copyright">
+            <p>© 2019<p>
+        </div>
+        <div id="footer-address">
+            <p>Bulldog Store, Mayfield, UT 84643</p>
+        </div>
+    </div>
+</footer>
+<script src="assign08.js">
+</script>
+</body>
+</html>
