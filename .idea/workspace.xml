@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0f03d2fe-b622-4ca9-b3a0-23b994b07cd6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/assign11.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/assign11.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/assign11.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/assign11.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/assign11.php" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/assign11.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/assign11_a.php" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/assign11_a.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/assign12.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/assign12.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/assign12.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/assign12.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/assign12.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/assign12.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,20 +17,33 @@
       <executable />
     </execution>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1U7bfQoYixhBKUbXd3khM50Ss79" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
     <key name="OPEN_URL_DIALOG">
@@ -70,11 +82,15 @@
       <workItem from="1575080140807" duration="155000" />
       <workItem from="1575083622065" duration="2713000" />
       <workItem from="1575087281129" duration="9913000" />
+      <workItem from="1575672040162" duration="16603000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="340" y="0" width="679" height="736" key="#PHP" timestamp="1575089213563">
@@ -93,10 +109,11 @@
       <screen x="0" y="0" width="1366" height="736" />
     </state>
     <state x="480" y="294" width="399" height="150" key="NewPhpFileDialog/0.0.1366.736@0.0.1366.736" timestamp="1575084922541" />
-    <state x="349" y="195" key="com.intellij.ide.util.TipDialog" timestamp="1575083622095">
-      <screen x="0" y="0" width="1366" height="736" />
+    <state x="429" y="281" key="com.intellij.ide.util.TipDialog" timestamp="1575672073406">
+      <screen x="0" y="23" width="1680" height="973" />
     </state>
     <state x="349" y="195" key="com.intellij.ide.util.TipDialog/0.0.1366.736@0.0.1366.736" timestamp="1575083622095" />
+    <state x="429" y="281" key="com.intellij.ide.util.TipDialog/1680.-228.1920.1057/0.23.1680.973@1680.-228.1920.1057" timestamp="1575672073406" />
     <state x="347" y="161" key="run.anything.popup" timestamp="1575097184622">
       <screen x="0" y="0" width="1366" height="736" />
     </state>

@@ -1,1 +1,83 @@
-This will be assignment #12
+<!DOCTYPE html>
+<html lang=en-us>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jacob Johnson">
+    <meta name="description" content="Calculate mileage between two cities connecting to mileageAjaxJSON cgi">
+    <title>Mileage Calculator - a12</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assign12.css">
+</head>
+<body onload="clearForm()">
+<header>
+    <div class="navbar">
+        <a href="assign11.html">Home</a>
+    </div>
+    <div class="header-background">
+        <div class="page-header">
+            <div class="center-flex" id="headerText">
+                <h1> Mileage Calculator </h1>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container">
+    <div class="container buffer-space">
+        <h3 style="text-align: center">Mileage Calculator</h3>
+        <form class="form-horizontal"  id="mileageInfo" onreset="clearForm()">
+            <div class="form-group row">
+                <label class="col-form-label col-sm-2" for="startCity" >Start City: </label>
+                <div class="col-sm-10">
+                    <input class="form-control" type="text" id="startCity" name="startCity" placeholder="City" required oninput="vCheck(this)">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-form-label col-sm-2" for="startState" >Start State: </label>
+                <div class="col-sm-10">
+                <input class="form-control" type="text" id="startState" name="startState" placeholder="ST" required onblur="vState2(this)" oninput="vState1(this)">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-form-label col-sm-2" for="endCity" >End City: </label>
+                <div class="col-sm-10">
+                <input class="form-control" type="text" id="endCity" name="endCity" placeholder="City" required oninput="vCheck(this)">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-form-label col-sm-2"for="endState" >End State: </label>
+                <div class="col-sm-10">
+                <input class="form-control" type="text" id="endState" name="endState" placeholder="ST" required onblur="vState2(this)" oninput="vState1(this)">
+                </div>
+            </div>
+            <div class="container-fluid buffer-space row">
+                <button class="col-sm-2" id="btnSubmit" name="btnSubmit" onclick="sendForm()" style="max-height:50px" >Calculate</button>
+                <span class="col-sm-1"></span>
+                <input class="col-sm-2" type="reset" id="form_reset" name="reset" style="max-height:50px">
+                <span class="col-sm-1"></span>
+                <div class="form-group row col-sm-6">
+                    <label class="col-form-label col-sm-3" id="mileageLabel" for="mileage" style="font-size:x-large;visibility:hidden">Trip Info:</label>
+                    <div class="col-sm-9">
+                        <textarea class="form-control" id="mileage" name="mileage" readonly style="visibility:hidden;min-height: 150px"></textarea>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<footer>
+    <div class="footer">
+        <div id="copyright">
+            <p>© 2019<p>
+        </div>
+        <div id="footer-address">
+            <p>On the Road, USA</p>
+        </div>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="assign12.js"></script>
+</body>
+</html>

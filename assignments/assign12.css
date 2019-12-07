@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+}
+
+a {
+    color: black;
+}
+
+textarea {
+    rows: 4;
+    cols: 30;
+    font-size: large;
+}
+
+td {
+    border: 1px solid black;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: slategray;
+}
+
+.navbar a {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 1.5em;
+}
+
+.header-background {
+    background-image: url("../images/road.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: darkslategrey;
+}
+
+.page-header {
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    align-content: center;
+    justify-content: space-around;
+    height: 300px;
+    background-color: rgba(130, 150, 190, .7);
+}
+
+.page-header h1{
+    font-size: 4em;
+}
+
+.page-header h3{
+    font-size: 2.5em;
+}
+
+#headerText {
+    color: darkslategrey;
+    font-family: sans-serif;
+}
+
+.center-flex {
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#clear {
+    width: 150px;
+    height: 30px;
+    font-size: 1.3rem;
+    margin: 1% 0 4% 0;
+    border-radius: 5px;
+}
+
+.buffer-space {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: lightgrey;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+#copyright{
+    flex:20%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#footer-address{
+    flex: 40%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
