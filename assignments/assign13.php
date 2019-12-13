@@ -1,63 +1,57 @@
-<!DOCTYPE html>
-<html lang=en-us>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Jacob Johnson">
-    <meta name="description" content="Confirm Order from Bulldog Store">
-    <title> Order Confirmation </title>
-    <link rel="stylesheet" type="text/css" href="assign11.css">
-</head>
-<body>
-<header>
-    <div class="navbar">
-        <a href="assign11.html">Home</a>
-    </div>
-</header>
-<div  style="margin-left:100px;">
-<div>
-    <h2 style="margin:20px"> Confirm Order </h2>
-</div>
-<?php
-    $first_name = $_POST['first_name'];
-    $last_name = $_POST['last_name'];
-    $address = $_POST['address'];
-    $phone = $_POST['phone'];
-    $items = $_POST['item'];
-    $total = $_POST['total'];
-    $card =$_POST['card'];
-    $exp_date = $_POST['exp_date'];
-    echo "<b>CONTACT INFO</b>";
-    echo "<br>First Name: " . $first_name;
-    echo "<br>Last Name: " . $last_name;
-    echo "<br>Address: " . $address;
-    echo "<br>Phone Number: " . $phone;
-    echo "<br><br><b>ITEMS TO PURCHASE</b>";
-    if (!empty($items)) {
-        foreach ($items as $item) {
-            echo "<br>" .$item. ", $". $_POST[$item];
-        }
-    }
-    echo "<br>Total: $". $total;
-    echo "<br><br><b>PAYMENT INFORMATION</b>";
-    echo "<br>Card Type: " . $card;
-    echo "<br>Expiration Date: " . $exp_date;
-?>
-<form action="assign11_a.php" method="post">
-    <input type="submit" id="confirm" name="confirm" value="Confirmed">
-    <input type="submit" id="canceled" name="canceled" value="Canceled">
-</form></div>
 
-<footer>
-    <div style="height: 50px"><br></div>
-    <div class="footer">
-        <div id="copyright">
-            <p>© 2019<p>
-        </div>
-        <div id="footer-address">
-            <p>Bulldog Store, Mayfield, UT 84643</p>
-        </div>
-    </div>
-</footer>
-</body>
-</html>
+<?php
+    $getFile = $_POST['getFile'];
+    if($getFile){
+        echo file_get_contents("../data/registration.txt");
+    } else {
+    $perf = $_POST['performance'];
+    $loc = $_POST['location'];
+    $room= $_POST['room'];
+    $time = $_POST['time_slot'];
+    $fName= $_POST['first_name'];
+    $lName= $_POST['last_name'];
+    $sID= $_POST['student_id'];
+    $skill = $_POST['skill'];
+    $instrument = $_POST['instrument'];
+    $fName2 = $_POST['first_name_2'];
+    $lName2 = $_POST['last_name_2'];
+    $sID2 = $_POST['student_id_2'];
+    $skill2 = $_POST['skill_2'];
+    $instrument2 = $_POST['instrument_2'];
+
+    $name1 = $fName ." ". $lName;
+    if ($fName2 != null) {
+        $name2 = $fName2 . " " . $lName2;
+        $name = $name1 . " and " . $name2;
+    } else {
+        $name = $name1;
+    }
+    $location = $loc . "\n". "Room " .$room;
+    if ($skill2 != null){
+        $skills = $skill ." and ". $skill2;
+    } else {
+        $skills = $skill;
+    }
+    $performance = $perf . " of ". $skills;
+
+    $performanceDetail = "<div class=\"flex-row\">
+                <div class=\"flex-item headers\">
+                    <p>".$name."</p>
+                </div>
+                <div class=\"flex-item headers\">
+                    <p>".$location."</p>
+                </div>
+                <div class=\"flex-item headers\">
+                    <p>".$time."</p>
+                </div>
+                <div class=\"flex-item headers\">
+                    <p>".$performance."</p>
+                </div>
+            </div>";
+
+    $myfile = fopen("../data/registration.txt", "a") or die("Unable to open file!");
+    fwrite($myfile, $performanceDetail);
+    fclose($myfile);
+    }
+    echo file_get_contents("../data/registration.txt");
+?>

@@ -4,64 +4,54 @@ function vCheck(el){
     }
 }
 
-function vState1(el){
-    let state = el.value;
-    let check = state.search(/^[a-zA-Z][a-zA-Z]$/);
-    if (state.length < 2){
-    } else {
-        if (check < 0) {
-            el.value = null;
-            el.style.background = "rgba(200, 150, 150, .7)";
-            el.placeholder = "invalid state abbreviate, use abbrev like ST";
-            el.focus();
-        }
-        else {
-            el.style.background = "ghostwhite";
-        }
+function vPType(el){
+    if(el.value == "Duet"){
+        document.getElementById("student2").style.display="flex";
+    } else{
+        document.getElementById("student2").style.display="none";
     }
 }
 
-function vState2(el){
-    let state = el.value;
-    if (state == ""){
-        console.log("state = null" + state);
-    }
-    else {
-        let check = state.search(/^[a-zA-Z][a-zA-Z]$/);
-        if (check < 0) {
-            el.value = null;
-            el.style.background = "rgba(200, 150, 150, .7)";
-            el.placeholder = "invalid state abbreviate, use abbrev like ST";
-            el.focus();
-        } else {
-            el.style.background = "ghostwhite";
-        }
-    }
-}
-
-function vForm(){
+function vForm(r,f,l,s){
     let valid = true;
     let focus = [];
-    let sCity= document.getElementById("startCity");
-    let sState= document.getElementById("startState");
-    let eCity= document.getElementById("endCity");
-    let eState= document.getElementById("endState");
-
-    if (sCity.value == "" || sCity.value  == null){
-        focus.push(startCity);
+    let room = document.getElementById("room");
+    let fName= document.getElementById("first_name");
+    let lName= document.getElementById("last_name");
+    let sID= document.getElementById("student_id");
+    let fName2 = document.getElementById("first_name_2");
+    let lName2 = document.getElementById("last_name_2");
+    let sID2 = document.getElementById("student_id_2");
+    let stud2 = document.getElementById("student2");
+    if (room.value == "" || room.value  == null){
+        focus.push(room);
         valid = false;
     }
-    if (sState.value == "" || sState.value  == null){
-        focus.push(startState);
+    if (fName.value == "" || fName.value  == null){
+        focus.push(fName);
         valid = false;
     }
-    if (eCity.value == "" || eCity.value  == null){
-        focus.push(endCity);
+    if (lName.value == "" || lName.value  == null){
+        focus.push(lName);
         valid = false;
     }
-    if (eState.value == "" || eState.value  == null){
-        focus.push(endState);
+    if (sID.value == "" || sID.value  == null){
+        focus.push(sID);
         valid = false;
+    }
+    if (stud2.style.display == "flex") {
+        if (fName2.value == "" || fName2.value == null) {
+            focus.push(fName2);
+            valid = false;
+        }
+        if (lName2.value == "" || lName2.value == null) {
+            focus.push(lName2);
+            valid = false;
+        }
+        if (sID2.value == "" || sID2.value == null) {
+            focus.push(sID2);
+            valid = false;
+        }
     }
     for (let i = 0; i < focus.length; i++){
         focus[i].value = null;
@@ -73,48 +63,59 @@ function vForm(){
     return valid;
 }
 
-function clearForm(){
-    document.getElementById("startCity").style.background = "ghostwhite";
-    document.getElementById("startState").style.background = "ghostwhite";
-    document.getElementById("endCity").style.background = "ghostwhite";
-    document.getElementById("endState").style.background = "ghostwhite";
-    document.getElementById("mileage").value = null;
-    document.getElementById("startCity").focus();
-}
-
-function sendForm() {
-    event.preventDefault();
-    let sCity = document.getElementById("startCity").value;
-    let sState = document.getElementById("startState").value;
-    let eCity = document.getElementById("endCity").value;
-    let eState = document.getElementById("endState").value;
-    if (vForm()) {
-        console.log("sendXMLRequest");
-        xmlRequester(sCity, sState, eCity, eState);
+function regStudent(){
+    let perf = document.getElementById("performance").value;
+    let loc = document.getElementById("location").value;
+    let room= document.getElementById("room").value;
+    let time = document.getElementById("time_slot").value;
+    let fName= document.getElementById("first_name").value;
+    let lName= document.getElementById("last_name").value;
+    let sID= document.getElementById("student_id").value;
+    let skill = document.getElementById("skill").value;
+    let instrument = document.getElementById("instrument").value;
+    let fName2 = document.getElementById("first_name_2").value;
+    let lName2 = document.getElementById("last_name_2").value;
+    let sID2 = document.getElementById("student_id_2").value;
+    let skill2 = document.getElementById("skill_2").value;
+    let instrument2 = document.getElementById("instrument_2").value;
+    let dataString = "performance="+perf+"location="+loc+"room="+room+"time_slot="+time+
+        "first_name="+fName+"last_name="+lName+"student_id="+sID+"skill="+skill+"instrument="+instrument+
+        "first_name2="+fName2+"last_name2="+lName2+"student_id2="+sID2+"skill2="+skill2+"instrument2="+instrument2;
+    if (vForm(room, fName, lName, sID)){
+        sendtoPHP(dataString);
     }
-    return false;
 }
 
-function xmlRequester(sCity, sState, eCity, eState){
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
+function clearForm(){
+    let room= document.getElementById("room");
+    room.style.background = "ghostwhite";
+    let fName= document.getElementById("first_name");
+    fName.style.background = "ghostwhite";
+    let lName= document.getElementById("last_name");
+    lName.style.background = "ghostwhite";
+    let sID = document.getElementById("student_id");
+    sID.style.background = "ghostwhite";
+    document.getElementById("room").focus();
+}
+
+function sendtoPHP(data){
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-            let jObj = JSON.parse(this.responseText);
-            document.getElementById("mileageLabel").style.visibility = "visible";
-            document.getElementById("mileage").style.visibility = "visible";
-            let startText = "From: " + sCity + ", " + sState;
-            let endText = "To: " + eCity + ", " + eState;
-            let milesText = "Miles: " + jObj.trip.miles;
-            let tmodeText = "";
-            if (jObj.trip.tmode != null){
-                tmodeText = "Modes of Transportation: " + jObj.trip.tmode;
-            }
-            document.getElementById("mileage").value = startText + "\n"
-                + endText + "\n" + milesText + "\n" + tmodeText;
+            document.getElementById("results-box").innerHTML = this.responseText;
         }
     };
-    let query = "?startCity="+sCity+"&startState="+sState+"&endCity="+eCity+"&endState="+eState;
-    xhttp.open("GET", ("/cgi-bin/ercanbracks/mileage/mileageAjaxJSON"+query), true);
-    xhttp.send();
+    xmlhttp.open("POST", "assign13.php?" + data, true);
+    xmlhttp.send();
 }
 
+function loadData(){
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("results-box").innerHTML = this.responseText;
+        }
+    };
+    xmlhttp.open("POST", "assign13.php?getFile=true", true);
+    xmlhttp.send();
+}

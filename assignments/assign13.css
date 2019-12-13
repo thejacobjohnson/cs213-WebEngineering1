@@ -6,14 +6,12 @@ a {
     color: white;
 }
 
-textarea {
-    rows: 4;
-    cols: 30;
-    font-size: large;
-}
-
 td {
     border: 1px solid black;
+}
+
+#student2{
+    display: none;
 }
 
 .navbar {
@@ -101,30 +99,84 @@ button {
     border-radius: 5px;
 }
 
-.item1 { grid-area: firstname; }
-.item2 { grid-area: lastname; }
-.item3 { grid-area: address; }
-.item4 { grid-area: phone; }
-.item5 { grid-area: items; }
-.item6 { grid-area: cardtype; }
-.item7 { grid-area: cardnum; }
-.item8 { grid-area: exp; }
-.item9 { grid-area: reset; }
-.item10 { grid-area: submit; }
-.item11 { grid-area: total; padding-left: 50px;}
+.form-box{
+    margin:10px;
+    padding: 5px;
+    background-color: rgb(180, 180, 180);
+    border-radius: 10px;
+}
+
+#results-box{
+
+}
+
+.item0 { grid-area: type; flex:20%; }
+.item1 { grid-area: location; flex:10%; }
+.item2 { grid-area: room; flex:30%; }
+.item3 { grid-area: time_slot; flex:10%; }
+.item4 { grid-area: first_name; flex:20%; }
+.item5 { grid-area: last_name; flex:20%; }
+.item6 { grid-area: student_id; flex:20%; }
+.item7 { grid-area: skill; flex:15%; }
+.item8 { grid-area: instrument; flex:10%; }
+.item9 { grid-area: reset; flex:40%; }
+.item10 { grid-area: register; flex:40%; }
+.student_info { grid-area: student_info; }
+.performance-info { grid-area: performance_info; }
+
+.headers{
+    flex: 20%;
+    padding: 1%;
+    margin: 2% 2% 1% 2%;
+    align-self: center;
+}
 
 .grid-container {
     display: grid;
     grid-template-areas:
-    'firstname lastname phone'
-    'address items items'
-    'address items items'
-    'cardtype total total'
-    'cardtype cardnum exp'
-    'submit reset auto';
+    'performance_info performance_info performance_info performance_info performance_info'
+    'student_info student_info student_info student_info student_info student_info'
+    'register register reset reset  auto';
+    grid-gap: 50px;
+    padding: 10px;
+    justify-content: center;
+    align-content: center;
+}
+
+.grid-row-pi {
+    display: grid;
+    grid-template-areas:
+            'type type location room time_slot';
     grid-gap: 50px;
     justify-content: center;
     align-content: center;
+}
+
+.grid-row-si {
+    display: grid;
+    grid-template-areas:
+            'first_name last_name student_id skill instrument';
+    grid-gap: 50px;
+    justify-content: center;
+    align-content: center;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-row{
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    margin: 10px;
+}
+
+.flex-item {
+    margin: 5px;
 }
 
 textarea {
