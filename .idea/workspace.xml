@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f03d2fe-b622-4ca9-b3a0-23b994b07cd6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assignments/assign13.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/assign13.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/assign13.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/assign133.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/black-and-white-keys-music-note-534283.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/assign12.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/assign12.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/assign12.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/assign12.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/assign12.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/assign12.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/assign11.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/assign11.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignments/assign13.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/assign13.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +26,7 @@
       <list>
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -39,10 +44,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assignments" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
@@ -52,6 +58,9 @@
       <recent name="http://localhost/~jwjohn19/assignments/assign11.html" />
       <recent name="http://localhost/~jwjohn19/" />
       <recent name="http://localhost/jwjohn19/" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assignments" />
@@ -82,7 +91,8 @@
       <workItem from="1575080140807" duration="155000" />
       <workItem from="1575083622065" duration="2713000" />
       <workItem from="1575087281129" duration="9913000" />
-      <workItem from="1575672040162" duration="16603000" />
+      <workItem from="1575672040162" duration="16636000" />
+      <workItem from="1575933444663" duration="1697000" />
     </task>
     <servers />
   </component>
@@ -109,10 +119,12 @@
       <screen x="0" y="0" width="1366" height="736" />
     </state>
     <state x="480" y="294" width="399" height="150" key="NewPhpFileDialog/0.0.1366.736@0.0.1366.736" timestamp="1575084922541" />
-    <state x="429" y="281" key="com.intellij.ide.util.TipDialog" timestamp="1575672073406">
+    <state x="429" y="281" key="com.intellij.ide.util.TipDialog" timestamp="1576211831763">
       <screen x="0" y="23" width="1680" height="973" />
     </state>
     <state x="349" y="195" key="com.intellij.ide.util.TipDialog/0.0.1366.736@0.0.1366.736" timestamp="1575083622095" />
+    <state x="429" y="281" key="com.intellij.ide.util.TipDialog/0.23.1680.973@0.23.1680.973" timestamp="1576211831763" />
+    <state x="429" y="282" key="com.intellij.ide.util.TipDialog/0.23.1680.975@0.23.1680.975" timestamp="1575933445789" />
     <state x="429" y="281" key="com.intellij.ide.util.TipDialog/1680.-228.1920.1057/0.23.1680.973@1680.-228.1920.1057" timestamp="1575672073406" />
     <state x="347" y="161" key="run.anything.popup" timestamp="1575097184622">
       <screen x="0" y="0" width="1366" height="736" />
