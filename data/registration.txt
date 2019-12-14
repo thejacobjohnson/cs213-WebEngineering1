@@ -1,0 +1,16 @@
+<h3 style="font-size:large; text-align: center"> Schedule </h3>
+            <div class="flex-row">
+                <div class="flex-item headers">
+                    <h3>Name</h3>
+                </div>
+                <div class="flex-item headers">
+                    <h3>Location</h3>
+                </div>
+                <div class="flex-item headers">
+                    <h3>Time</h3>
+                </div>
+                <div class="flex-item headers">
+                    <h3>Performance</h3>
+                </div>
+            </div>
+            <hr>

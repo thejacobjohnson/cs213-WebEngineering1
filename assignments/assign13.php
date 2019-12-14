@@ -47,7 +47,8 @@
                 <div class=\"flex-item headers\">
                     <p>".$performance."</p>
                 </div>
-            </div>";
+            </div>
+            <hr>";
 
     $myfile = fopen("../data/registration.txt", "a") or die("Unable to open file!");
     fwrite($myfile, $performanceDetail);

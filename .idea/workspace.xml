@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f03d2fe-b622-4ca9-b3a0-23b994b07cd6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data/registration.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignments/assign13.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/assign13.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignments/assign13.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/assign13.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignments/assign13.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/assign13.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignments/assign13.php" beforeDir="false" afterPath="$PROJECT_DIR$/assignments/assign13.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/registration.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/registration.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +105,16 @@
       <workItem from="1575087281129" duration="9913000" />
       <workItem from="1575672040162" duration="16636000" />
       <workItem from="1575933444663" duration="1697000" />
+      <workItem from="1576287706272" duration="1039000" />
     </task>
+    <task id="LOCAL-00001" summary="Should be mostly done. Need to check 13's php">
+      <created>1576229116837</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1576229116837</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +122,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Should be mostly done. Need to check 13's php" />
+    <option name="LAST_COMMIT_MESSAGE" value="Should be mostly done. Need to check 13's php" />
   </component>
   <component name="WindowStateProjectService">
     <state x="340" y="0" width="679" height="736" key="#PHP" timestamp="1575089213563">
@@ -124,10 +134,10 @@
       <screen x="0" y="0" width="1366" height="736" />
     </state>
     <state x="416" y="117" width="528" height="503" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.736@0.0.1366.736" timestamp="1575084848933" />
-    <state x="277" y="0" width="799" height="731" key="CommitChangelistDialog2" timestamp="1576229097723">
+    <state x="277" y="0" width="799" height="731" key="CommitChangelistDialog2" timestamp="1576229116723">
       <screen x="0" y="0" width="1360" height="731" />
     </state>
-    <state x="277" y="0" width="799" height="731" key="CommitChangelistDialog2/0.0.1360.731@0.0.1360.731" timestamp="1576229097723" />
+    <state x="277" y="0" width="799" height="731" key="CommitChangelistDialog2/0.0.1360.731@0.0.1360.731" timestamp="1576229116723" />
     <state x="466" y="126" width="428" height="486" key="FileChooserDialogImpl" timestamp="1575087135835">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
@@ -136,9 +146,10 @@
       <screen x="0" y="0" width="1366" height="736" />
     </state>
     <state x="480" y="294" width="399" height="150" key="NewPhpFileDialog/0.0.1366.736@0.0.1366.736" timestamp="1575084922541" />
-    <state x="429" y="281" key="com.intellij.ide.util.TipDialog" timestamp="1576211831763">
-      <screen x="0" y="23" width="1680" height="973" />
+    <state x="347" y="194" key="com.intellij.ide.util.TipDialog" timestamp="1576287705745">
+      <screen x="0" y="0" width="1360" height="731" />
     </state>
+    <state x="347" y="194" key="com.intellij.ide.util.TipDialog/0.0.1360.731@0.0.1360.731" timestamp="1576287705745" />
     <state x="349" y="195" key="com.intellij.ide.util.TipDialog/0.0.1366.736@0.0.1366.736" timestamp="1575083622095" />
     <state x="429" y="281" key="com.intellij.ide.util.TipDialog/0.23.1680.973@0.23.1680.973" timestamp="1576211831763" />
     <state x="429" y="282" key="com.intellij.ide.util.TipDialog/0.23.1680.975@0.23.1680.975" timestamp="1575933445789" />

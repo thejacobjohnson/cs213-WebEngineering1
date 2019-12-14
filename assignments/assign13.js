@@ -78,9 +78,9 @@ function regStudent(){
     let sID2 = document.getElementById("student_id_2").value;
     let skill2 = document.getElementById("skill_2").value;
     let instrument2 = document.getElementById("instrument_2").value;
-    let dataString = "performance="+perf+"location="+loc+"room="+room+"time_slot="+time+
-        "first_name="+fName+"last_name="+lName+"student_id="+sID+"skill="+skill+"instrument="+instrument+
-        "first_name2="+fName2+"last_name2="+lName2+"student_id2="+sID2+"skill2="+skill2+"instrument2="+instrument2;
+    let dataString = "performance="+perf+"&location="+loc+"&room="+room+"&time_slot="+time+
+        "&first_name="+fName+"&last_name="+lName+"&student_id="+sID+"&skill="+skill+"&instrument="+instrument+
+        "&first_name2="+fName2+"&last_name2="+lName2+"&student_id2="+sID2+"&skill2="+skill2+"&instrument2="+instrument2;
     if (vForm(room, fName, lName, sID)){
         sendtoPHP(dataString);
     }
